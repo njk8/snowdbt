@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: FINANCE__ECONOMICS
+    database: FINANCE__ECONOMICS
+    schema: CYBERSYN
+    tables:
+      - name: FX_RATES_TIMESERIES
+      - name: STOCK_PRICE_TIMESERIES
