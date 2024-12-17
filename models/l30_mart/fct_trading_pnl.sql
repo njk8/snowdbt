@@ -2,6 +2,8 @@
 config(
 	  materialized='incremental'
 	  , tags=["Fact Data"]
+	  , pre_hook ="ALTER WAREHOUSE dbt_dev_wh SET WAREHOUSE_SIZE ='XLARGE'" 
+      , post_hook="ALTER WAREHOUSE dbt_dev_wh SET WAREHOUSE_SIZE ='XSMALL'"
 	  ) 
 }}
 SELECT src.*

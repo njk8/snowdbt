@@ -41,6 +41,7 @@ models:
     l20_transform:
           schema: l20_transform
           materialized: view
+          +snowflake_warehouse: dbt_dev_heavy_wh
     l30_mart:
           schema: l30_mart
           materialized: view
